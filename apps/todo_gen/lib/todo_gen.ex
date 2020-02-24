@@ -1,4 +1,4 @@
-defmodule Todolist do
+defmodule TodoGen do
 
   use GenServer
 
@@ -9,7 +9,7 @@ defmodule Todolist do
   end  
 
   def init(opts) do
-    {:ok, %Todolist{name: opts}}
+    {:ok, %TodoGen{name: opts}}
   end
 
   def handle_call(:name, _from, state) do
